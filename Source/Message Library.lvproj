@@ -440,7 +440,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8736D784-2CB2-4D3A-92AF-8031C6E8C40C}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CDMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built/Windows/CDMessaging.lvlibp</Property>
@@ -538,7 +538,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{252C1F8B-93C7-4B6D-87A0-E26D869C3230}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Pharlap</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CDMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/NI_AB_TARGETNAME/CDMessaging.lvlibp</Property>
@@ -549,7 +549,7 @@
 				<Property Name="Destination[1].path" Type="Path">/NI_AB_TARGETNAME</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FC478D55-FDE6-4051-B98C-A0783A54C20E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FB7913DB-0AC1-4474-ADFB-EE0583226A85}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Pharlap/Messaging.lvlib</Property>
@@ -640,7 +640,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BC170595-AA66-4507-883C-41ED45DC8FD2}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CDMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/CDMessaging.lvlibp</Property>
@@ -651,7 +651,7 @@
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{750A4ABC-BC19-4C60-87F1-6D14BD2A2BDF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9106121A-8A24-4578-AC09-15DFD3AA204D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Linux x64/Messaging.lvlib</Property>
@@ -741,7 +741,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{30DF68F1-064E-44DF-B01A-79A32F714458}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_32_ARM</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CDMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_32_ARM/CDMessaging.lvlibp</Property>
@@ -752,7 +752,7 @@
 				<Property Name="Destination[1].path" Type="Path">/Linux_32_ARM</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D1187FA2-EA70-4E13-AC0D-91E99DEC9BE3}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{AD5D54DD-C336-4906-AE10-D582C9FB052C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Linux ARM/Messaging.lvlib</Property>
