@@ -1,15 +1,15 @@
-# GitHub Repo Template
+# NI VeriStand Custom Device Message Library
 
-GitHub Repo Template is a template for creation of open source projects made
-available on GitHub. It includes a permissive open source license, a developer
-certificate of origin, and a pull request template. This provides everything
-necessary to have a properly licensed open source project.
+This library defines a class-based producer-consumer messaging system that can be used to communicate between a single producer custom device engine and an arbitrary number of consumer custom device engines.
 
-## Using GitHub Repo Template
+## LabVIEW Version
+LabVIEW 2017
 
-1. Clone or download this repository.
-2. Copy its contents into your project (including the hidden .github directory). 
-3. Customize each file to suit your project's needs (including the README). Look through the files for "TODO" and \<reponame\>, and replace with content appropriate to your project.
-4. (Optional) Check out [GitHub Template Guidelines](https://github.com/cezaraugusto/github-template-guidelines) for ideas about how to customize your project.
+## Git History & Rebasing Policy
+Branch rebasing and other history modifications will be listed here, with several notable exceptions:
+- Branches prefixed with `dev/` may be rebased, overwritten, or deleted at any time.
+- Pull requests may be squashed on merge.
 
-TODO: describe a project in detail, what it does, how to use it, etc.
+## License
+
+The NI VeriStand Custom Device Message Library is licensed under an MIT-style license (see LICENSE). Other incorporated projects may be licensed under different licenses. All licenses allow for non-commercial and commercial use.

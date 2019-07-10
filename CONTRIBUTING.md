@@ -13,11 +13,13 @@ See [GitHub's official documentation](https://help.github.com/articles/using-pul
 
 # Getting Started
 
-- TODO: include build steps here.
+A single project is included, which defines build specifications for different operating systems to which this library may be deployed.
 
 # Testing
 
-- TODO: include testing steps here.
+Unit tests are provided with the library. These tests can be run from within the LabVIEW
+project using the [VI Tester](https://github.com/JKISoftware/JKI-VI-Tester) integration, or from the command line
+using the `RunVITester` operation provided by the [testing tools](https://github.com/ni/niveristand-custom-device-testing-tools).
 
 # Developer Certificate of Origin (DCO)
 
