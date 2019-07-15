@@ -48,8 +48,6 @@
 			<Item Name="Post-Build Action.vi" Type="VI" URL="../Utility/Post-Build Action.vi"/>
 		</Item>
 		<Item Name="Messaging.lvlib" Type="Library" URL="../Messaging.lvlib"/>
-		<Item Name="Usage.vi" Type="VI" URL="../Usage.vi"/>
-		<Item Name="Usage2.vi" Type="VI" URL="../Usage2.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -440,7 +438,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8736D784-2CB2-4D3A-92AF-8031C6E8C40C}</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CDMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built/Windows/CDMessaging.lvlibp</Property>
@@ -538,7 +536,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{252C1F8B-93C7-4B6D-87A0-E26D869C3230}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Pharlap</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CDMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/NI_AB_TARGETNAME/CDMessaging.lvlibp</Property>
@@ -640,7 +638,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BC170595-AA66-4507-883C-41ED45DC8FD2}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CDMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/CDMessaging.lvlibp</Property>
@@ -741,7 +739,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{30DF68F1-064E-44DF-B01A-79A32F714458}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_32_ARM</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">CDMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_32_ARM/CDMessaging.lvlibp</Property>
