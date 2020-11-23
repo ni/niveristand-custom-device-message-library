@@ -10,3 +10,6 @@ name = 'Messaging Libraries'
 type = 'lvBuildSpecAllTargets'
 project = '{library}'
 build_spec = 'Messaging'
+
+[notification]
+type = 'teams'
