@@ -51,5 +51,5 @@ using the `RunVITester` operation provided by the [testing tools](https://github
 
 (taken from [developercertificate.org](https://developercertificate.org/))
 
-See [LICENSE](https://github.com/ni/niveristand-custom-device-message-library/blob/master/LICENSE)
+See [LICENSE](https://github.com/ni/niveristand-custom-device-message-library/blob/main/LICENSE)
 for details about how niveristand-custom-device-message-library is licensed.
