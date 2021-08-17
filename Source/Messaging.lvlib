@@ -36,5 +36,14 @@
 		<Item Name="Abstract Switch Consumer.lvclass" Type="LVClass" URL="../Switch/Abstract Switch Consumer/Abstract Switch Consumer.lvclass"/>
 		<Item Name="Abstract Switch Init Parameters.lvclass" Type="LVClass" URL="../Switch/Abstract Switch Init Parameters/Abstract Switch Init Parameters.lvclass"/>
 	</Item>
+	<Item Name="Log" Type="Folder">
+		<Item Name="Messages" Type="Folder">
+			<Item Name="Log Write Message.lvclass" Type="LVClass" URL="../Log/Log Write Message/Log Write Message.lvclass"/>
+			<Item Name="Log Open Message.lvclass" Type="LVClass" URL="../Log/Log Open Message/Log Open Message.lvclass"/>
+			<Item Name="Log Close Message.lvclass" Type="LVClass" URL="../Log/Log Close Message/Log Close Message.lvclass"/>
+		</Item>
+		<Item Name="Abstract Log Consumer.lvclass" Type="LVClass" URL="../Log/Abstract Log Consumer/Abstract Log Consumer.lvclass"/>
+		<Item Name="Abstract Log Init Parameters.lvclass" Type="LVClass" URL="../Log/Abstract Log Init Parameters/Abstract Log Init Parameters.lvclass"/>
+	</Item>
 	<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../Initialize Request Response Queues.vi"/>
 </Library>
