@@ -7,9 +7,8 @@ path = 'Source\Message Library.lvproj'
 
 [[build.steps]]
 name = 'Messaging Libraries'
-type = 'lvBuildSpecAllTargets'
+type = 'lvBuildAll'
 project = '{library}'
-build_spec = 'Messaging'
 
 [notification]
 type = 'teams'
