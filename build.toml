@@ -9,6 +9,7 @@ path = 'Source\Message Library.lvproj'
 name = 'Messaging Libraries'
 type = 'lvBuildAll'
 project = '{library}'
+minimum_version = '2020'
 
 [package]
 type = 'nipkg'
