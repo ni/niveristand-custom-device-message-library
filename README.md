@@ -6,7 +6,7 @@ This library defines a class-based producer-consumer messaging system that can b
 LabVIEW 2019
 
 ## Dependencies
-Requires the [NI VeriStand Custom Device Testing Tools](https://github.com/ni/niveristand-custom-device-testing-tools) to run automated tests.
+Requires the [NI VeriStand Custom Device Testing Tools](https://github.com/ni/niveristand-custom-device-testing-tools) to run automated tests. Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-testing-tools/releases)
 
 ## Git History & Rebasing Policy
 Branch rebasing and other history modifications will be listed here, with several notable exceptions:
