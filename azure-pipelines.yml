@@ -85,7 +85,6 @@ stages:
                 customDeviceRepoName:  ${{ parameters.customDeviceRepoName }}
                 lvVersion:             ${{ lvVersion.version }}
                 bitness:               ${{ lvVersion.bitness }} 
-                # dependencies:          ${{ parameters.dependencies }} No dependencies for CD Messaging Library
 
             - ${{ each buildStep in parameters.buildSteps }}:
               - template: azure-templates\build-op-steps.yml@imitation-cd # config file and build specs
@@ -94,6 +93,7 @@ stages:
                   buildOperation:  ${{ buildStep.buildOperation }}
                   target:          ${{ buildStep.target }}
                   buildSpec:       ${{ buildStep.buildSpec }}
+                  # dependencies:          ${{ parameters.dependencies }} No dependencies for CD Messaging Library
 
             - template: azure-templates\post-job-steps.yml@imitation-cd # nipkg and archive
               parameters:
