@@ -95,10 +95,9 @@ stages:
                   target:          ${{ buildStep.target }}
                   buildSpec:       ${{ buildStep.buildSpec }}
 
-            - ${{ each package in parameters.packages }}:
               - template: azure-templates\post-job-steps.yml@imitation-cd # nipkg and archive
                 parameters:
-                  package:             ${{ package }}
+                  packages:            ${{ parameters.packages }}
                   buildOutputLocation: ${{ parameters.buildOutputLocation }}
                   archiveLocation:     ${{ parameters.archiveLocation }}
                   pack:                true
