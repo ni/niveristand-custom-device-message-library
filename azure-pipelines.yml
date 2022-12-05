@@ -58,7 +58,7 @@ parameters:
     # archiveLocation - location to store build artifacts for archival
   - name:    archiveLocation
     type:    string
-    default: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
+    default: '\\nirvana\temp\papower\Measurements\VeriStandAddons\messaging_library'
 
     # buildSteps - list of each project, buildOperation, target, and buildSpec combination to build 
     # Note: target and buildSpec may be empty for some buildOperations
