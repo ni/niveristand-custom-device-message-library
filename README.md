@@ -3,7 +3,7 @@
 This library defines a class-based producer-consumer messaging system that can be used to communicate between a single producer custom device engine and an arbitrary number of consumer custom device engines.
 
 ## LabVIEW Version
-LabVIEW 2019
+LabVIEW 2020
 
 ## Dependencies
 Requires the [NI VeriStand Custom Device Testing Tools](https://github.com/ni/niveristand-custom-device-testing-tools) to run automated tests. Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-testing-tools/releases)
