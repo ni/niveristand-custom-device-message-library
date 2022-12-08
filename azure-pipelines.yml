@@ -42,6 +42,14 @@ parameters:
       # - version: '2023' TEMPORARY, disable 2023 build since LabVIEW is still buggy
       #   bitness: '64-bit'
 
+    # releaseVersionm quarterlyReleaseVersion - release versions for output package
+  - name:    releaseVersion
+    type:    string
+    default: '23.0.0'
+  - name:    quarterlyReleaseVersion
+    type:    string
+    default: '2023 Q1'
+
     # buildSteps - list of each project, buildOperation, target, and buildSpec combination to build 
     # Note: target and buildSpec may be empty for some buildOperations
   - name:    buildSteps
@@ -86,6 +94,8 @@ stages:
                 customDeviceRepoName:  ${{ parameters.customDeviceRepoName }}
                 lvVersion:             ${{ lvVersion.version }}
                 bitness:               ${{ lvVersion.bitness }} 
+                releaseVersion:          ${{ parameters.releaseVersion }}
+                quarterlyReleaseVersion: ${{ parameters.quarterlyReleaseVersion }}
 
             - ${{ each buildStep in parameters.buildSteps }}:
               - template: azure-templates\build-op-steps.yml@imitation-cd # config file and build specs
