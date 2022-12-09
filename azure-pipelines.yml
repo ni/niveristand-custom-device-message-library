@@ -39,8 +39,8 @@ parameters:
         bitness: '32-bit'
       - version: '2021'
         bitness: '64-bit'
-      # - version: '2023' TEMPORARY, disable 2023 build since LabVIEW is still buggy
-      #   bitness: '64-bit'
+      - version: '2023'
+        bitness: '64-bit'
 
     # releaseVersionm quarterlyReleaseVersion - release versions for output package
   - name:    releaseVersion
