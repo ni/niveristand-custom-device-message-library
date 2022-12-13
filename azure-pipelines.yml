@@ -38,8 +38,8 @@ stages:
       buildSteps:
         - projectLocation: 'Source\Message Library.lvproj'
           buildOperation: 'ExecuteAllBuildSpecs'
-          target: ''
-          buildSpec: ''
+          target: 'All'
+          buildSpec: 'All'
 
       releaseVersion: '23.0.0'
       quarterlyReleaseVersion: '2023 Q1'
