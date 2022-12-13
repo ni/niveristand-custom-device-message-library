@@ -38,7 +38,7 @@ stages:
       releaseVersion: '23.0.0'
       quarterlyReleaseVersion: '2023 Q1'
       buildOutputLocation: 'Built'
-      archiveLocation: '\\daqserver\temp\papower\Measurements\VeriStandAddons\messaging_library'
+      archiveLocation: '\\nirvana\\Measurements\VeriStandAddons\prototype\messaging_library'
 
       pack: true
       packages:
