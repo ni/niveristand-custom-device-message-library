@@ -1,4 +1,4 @@
-# just a test... don't submit this
+# just a test... don't submit this either
 trigger:
   batch: true
   branches:
