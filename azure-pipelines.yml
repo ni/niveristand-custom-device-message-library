@@ -12,11 +12,6 @@ resources:
       ref:        main
       endpoint:   ni (2)
       name:       ni/niveristand-custom-device-build-tools
-# Pipeline Completion Triggers:
-  pipelines:
-    - pipeline: VeristandMessageLibrary
-      source:   ni.niveristand-custom-device-message-library
-      trigger:  true
 
 stages:
   - template: azure-templates/stages.yml@niveristand-custom-device-build-tools
