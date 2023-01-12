@@ -35,7 +35,6 @@ stages:
       buildOutputLocation: 'Built'
       archiveLocation: '\\nirvana\\Measurements\VeriStandAddons\prototype\messaging_library'
 
-      pack: true
       packages:
         - controlFileName: 'control'
           payloadMaps:
