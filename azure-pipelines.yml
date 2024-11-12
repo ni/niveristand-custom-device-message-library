@@ -21,8 +21,6 @@ stages:
           bitness: '64bit'
         - version: '2024'
           bitness: '64bit'
-        - version: '2025'
-          bitness: '64bit'
 
       buildSteps:
         - projectLocation: 'Source\Message Library.lvproj'
