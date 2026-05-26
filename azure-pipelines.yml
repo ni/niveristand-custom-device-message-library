@@ -49,9 +49,9 @@ stages:
 
       buildSteps:
         - projectLocation: 'Source\Message Library.lvproj'
-          buildOperation: 'ExecuteAllBuildSpecs'
-          target: 'All'
-          buildSpec: 'All'
+          buildOperation: 'ExecuteBuildSpec'
+          target: 'My Computer'
+          buildSpec: 'Source Distribution'
 
       releaseVersion: '26.0.0'
       branch: 'main'
