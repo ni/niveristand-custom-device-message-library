@@ -57,5 +57,6 @@ stages:
       releaseVersion: '26.0.0'
       branch: 'main'
       debugBuild: 'no'
+      repoName: 'niveristand-custom-device-message-library'
       buildOutputLocation: 'Built'
       archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
