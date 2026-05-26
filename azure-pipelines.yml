@@ -48,11 +48,11 @@ stages:
           bitness: '64bit'
 
       buildSteps:
-        - id: 'message_library'
-          projectLocation: 'Source\Message Library.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'My Computer'
-          buildSpec: 'Source Distribution'
+      - id: 'message_library'
+        projectLocation: 'Source\Message Library.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'My Computer'
+        buildSpec: 'Source Distribution'
 
       releaseVersion: '26.0.0'
       branch: 'main'
