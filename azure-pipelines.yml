@@ -49,7 +49,7 @@ stages:
 
       buildSteps:
       - id: 'message_library'
-        projectLocation: 'Source\Message Library.lvproj'
+        projectLocation: 'Source/Message Library.lvproj'
         buildOperation: 'ExecuteBuildSpec'
         target: 'My Computer'
         buildSpec: 'Source Distribution'
