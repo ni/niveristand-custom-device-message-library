@@ -31,7 +31,7 @@ stages:
           target: 'All'
           buildSpec: 'All'
 
-      releaseVersion: '26.0.0'
+      releaseVersion: '26.5.0'
       buildOutputLocation: 'Built'
       archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
 
