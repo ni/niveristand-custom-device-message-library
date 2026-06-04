@@ -60,7 +60,7 @@ stages:
         target: 'My Computer'
         buildSpec: 'Messaging'
 
-      releaseVersion: '26.0.0'
+      releaseVersion: '26.5.0'
       branch: 'main'
       debugBuild: 'no'
       repoName: 'niveristand-custom-device-message-library'
