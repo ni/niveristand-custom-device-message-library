@@ -34,6 +34,9 @@ stages:
       releaseVersion: '26.5.0'
       buildOutputLocation: 'Built'
       archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
+      repoName: 'niveristand-custom-device-message-library'
+      createNetCoreRepo: true
+
 
       packages:
         - controlFileName: 'control'
