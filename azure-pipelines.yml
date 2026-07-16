@@ -5,67 +5,84 @@ trigger:
       - main
       - release/*
 
+variables:
+  - name: ConvertNetCore
+    value: true
+
 resources:
   repositories:
     - repository: niveristand-custom-device-build-tools
-      type:       github
-      ref:        main
-      endpoint:   nivs-custom-devices
-      name:       ni/niveristand-custom-device-build-tools
+      type: github
+      ref: main
+      endpoint: nivs-custom-devices
+      name: ni/niveristand-custom-device-build-tools
 
 stages:
-  - template: azure-templates/stages.yml@niveristand-custom-device-build-tools
-    parameters:
-      lvVersionsToBuild:
+
+# =====================================================================
+# WINDOWS BUILD (Stage Template)
+# =====================================================================
+- template: azure-templates/stages.yml@niveristand-custom-device-build-tools
+  parameters:
+    stageName: WindowsBuild
+
+    lvVersionsToBuild:
         
-        - version: '2024'
-          bitness: '64bit'
-        - version: '2025'
-          bitness: '64bit'
-        - version: '2026'
-          bitness: '64bit'
+      - version: '2024'
+        bitness: '64bit'
+      - version: '2025'
+        bitness: '64bit'
+      - version: '2026'
+        bitness: '64bit'
 
-      buildSteps:
-        - projectLocation: 'Source\Message Library.lvproj'
-          buildOperation: 'ExecuteAllBuildSpecs'
-          target: 'All'
-          buildSpec: 'All'
+    buildSteps:
+      - projectLocation: 'Source\Message Library.lvproj'
+        buildOperation: 'ExecuteAllBuildSpecs'
+        target: 'All'
+        buildSpec: 'All'
 
-      releaseVersion: '26.5.0'
-      buildOutputLocation: 'Built'
-      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
-      repoName: 'niveristand-custom-device-message-library'
-      createNetCoreRepo: true
+    releaseVersion: '26.5.0'
+    buildOutputLocation: 'Built'
+    archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
+    repoName: 'niveristand-custom-device-message-library'
 
+    packages:
+      - controlFileName: 'control'
+        payloadMaps:
+          - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\NI\VeriStand Custom Device Messaging'
+            payloadLocation: 'VeriStand Custom Device Messaging'
 
-      packages:
-        - controlFileName: 'control'
-          payloadMaps:
-            - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\NI\VeriStand Custom Device Messaging'
-              payloadLocation: 'VeriStand Custom Device Messaging'
+# =====================================================================
+# LINUX BUILD
+# =====================================================================
+- template: azure-templates/linux-stage.yml@niveristand-custom-device-build-tools
+  parameters:
+    stageName: LinuxBuild
 
-  - template: azure-templates/linux-stage.yml@niveristand-custom-device-build-tools
-    parameters:
-      lvVersionsToBuild:
-        - version: '2026'
-          bitness: '64bit'
+    # If your linux-stage.yml supports these parameters:
+    dependsOn: 
+      - WindowsBuild
 
-      buildSteps:
-      - id: 'message_library_source_distribution'
-        projectLocation: 'Source/Message Library.lvproj'
-        buildOperation: 'ExecuteBuildSpec'
-        target: 'My Computer'
-        buildSpec: 'Source Distribution'
+    lvVersionsToBuild:
+      - version: '2026'
+        bitness: '64bit'
 
-      - id: 'message_library_messaging'
-        projectLocation: 'Source/Message Library.lvproj'
-        buildOperation: 'ExecuteBuildSpec'
-        target: 'My Computer'
-        buildSpec: 'Messaging'
+    buildSteps:
+    - id: 'message_library_source_distribution'
+      projectLocation: 'Source/Message Library.lvproj'
+      buildOperation: 'ExecuteBuildSpec'
+      target: 'My Computer'
+      buildSpec: 'Source Distribution'
 
-      releaseVersion: '26.5.0'
-      branch: 'main'
-      debugBuild: 'no'
-      repoName: 'niveristand-custom-device-message-library'
-      buildOutputLocation: 'Built'
-      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
+    - id: 'message_library_messaging'
+      projectLocation: 'Source/Message Library.lvproj'
+      buildOperation: 'ExecuteBuildSpec'
+      target: 'My Computer'
+      buildSpec: 'Messaging'
+
+    releaseVersion: '26.5.0'
+    branch: 'main'
+    debugBuild: 'no'
+    repoName: 'niveristand-custom-device-message-library'
+    buildOutputLocation: 'Built'
+    archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
