@@ -51,8 +51,6 @@ stages:
       lvVersionsToBuild:
         - version: '2026'
           bitness: '64bit'
-        - version: '2027'
-          bitness: '64bit'
 
       buildSteps:
       - id: 'message_library_source_distribution'
