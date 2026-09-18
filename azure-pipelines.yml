@@ -17,13 +17,6 @@ stages:
   - template: azure-templates/stages.yml@niveristand-custom-device-build-tools
     parameters:
       lvVersionsToBuild:
-        
-        - version: '2024'
-          bitness: '64bit'
-        - version: '2025'
-          bitness: '64bit'
-        - version: '2026'
-          bitness: '64bit'
         - version: '2027'
           bitness: '64bit'
 
@@ -33,9 +26,9 @@ stages:
           target: 'All'
           buildSpec: 'All'
 
-      releaseVersion: '26.8.0'
+      releaseVersion: '27.0.0'
       buildOutputLocation: 'Built'
-      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
+      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\netcore\messaging_library'
       repoName: 'niveristand-custom-device-message-library'
       createNetCoreRepo: true
 
@@ -49,7 +42,7 @@ stages:
   - template: azure-templates/linux-stage.yml@niveristand-custom-device-build-tools
     parameters:
       lvVersionsToBuild:
-        - version: '2026'
+        - version: '2027'
           bitness: '64bit'
 
       buildSteps:
@@ -65,9 +58,9 @@ stages:
         target: 'My Computer'
         buildSpec: 'Messaging'
 
-      releaseVersion: '26.8.0'
+      releaseVersion: '27.0.0'
       branch: 'main'
       debugBuild: 'no'
       repoName: 'niveristand-custom-device-message-library'
       buildOutputLocation: 'Built'
-      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\messaging_library'
+      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\netcore\messaging_library'
