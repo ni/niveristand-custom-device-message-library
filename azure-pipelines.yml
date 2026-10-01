@@ -30,7 +30,7 @@ stages:
           target: 'All'
           buildSpec: 'All'
 
-      releaseVersion: '26.8.0'
+      releaseVersion: '27.0.0'
       buildOutputLocation: 'Built'
       archiveLocation: '\\nirvana\Measurements\VeriStandAddons\legacy\messaging_library'
       repoName: 'niveristand-custom-device-message-library'
