@@ -1,6 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="23008000">
+<Project Type="Project" LVVersion="27002001">
+	<Property Name="NI.LV.All.SaveVersion" Type="Str">27.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -48,25 +50,7 @@
 			<Item Name="Post-Build Action.vi" Type="VI" URL="../Utility/Post-Build Action.vi"/>
 		</Item>
 		<Item Name="Messaging.lvlib" Type="Library" URL="../Messaging.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
-				<Item Name="TestCase.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/TestCase.llb/TestCase.lvclass"/>
-				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
-				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
-				<Item Name="VeriStandTestUtilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/VeriStand Custom Device Testing Tools/VeriStandTestUtilities/VeriStandTestUtilities.lvlib"/>
-				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
-				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
-				<Item Name="WaitOnTestComplete.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/TestCase.llb/WaitOnTestComplete.vi"/>
-				<Item Name="skip.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/TestCase.llb/skip.vi"/>
-			</Item>
-			<Item Name="user.lib" Type="Folder">
-				<Item Name="Append Path to Root if Relative - Scalar__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Scalar__ogtk.vi"/>
-				<Item Name="Append Path to Root if Relative__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative__ogtk.vi"/>
-				<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
-			</Item>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Messaging" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
@@ -177,6 +161,11 @@
 		<Property Name="target.IOScan.Priority" Type="UInt">0</Property>
 		<Property Name="target.IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
+		<Property Name="target.RemotePanel.ControlPortEnabled" Type="Bool">false</Property>
+		<Property Name="target.RemotePanel.ControlTcpPort" Type="Int">3584</Property>
+		<Property Name="target.RemotePanel.ViAccess" Type="Str">+*</Property>
+		<Property Name="target.RemotePanel.ViewPortEnabled" Type="Bool">false</Property>
+		<Property Name="target.RemotePanel.ViewTcpPort" Type="Int">3583</Property>
 		<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
 		<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
@@ -206,11 +195,7 @@
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Messaging.lvlib" Type="Library" URL="../Messaging.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-			</Item>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Messaging" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
